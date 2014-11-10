@@ -1,3 +1,3 @@
 Bash script utilities for JimStearns206
-Includes copies of .bash_profile and .bashrc, which should be copied to ~
+Includes .bash_profile and .bashrc. Place symbolic links in ~ to these files.
 Maintained on github.
