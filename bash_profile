@@ -13,6 +13,9 @@ fi
 # Put all environment variables here. This is read in at shell login.
 ##
 
+# MacPorts Installer addition on 2014-11-08_at_13:38:26: adding an appropriate PATH variable for use with MacPorts.
+export PATH="/opt/local/bin:/opt/local/sbin:$PATH"
+
 # -- PATH --
 # Only set if user is jimstearns. Don't clutter and confuse Mac VMs.
 if [ "$(whoami)" = "jimstearns" ]; then
@@ -22,7 +25,7 @@ if [ "$(whoami)" = "jimstearns" ]; then
     ##export PATH="/Users/jimstearns/anaconda/bin:$PATH"
     ## Or Python3.4
     # Setting PATH for Python 3.4
-    # The orginal version is saved in .bash_profile.pysave
+    # The original version is saved in .bash_profile.pysave
     ##PATH="/Library/Frameworks/Python.framework/Versions/3.4/bin:${PATH}"
     
     echo "NOT setting up Python anaconda or 3.4 in PATH (while MARPLOTing)"
@@ -38,7 +41,6 @@ if [ "$(whoami)" = "jimstearns" ]; then
 else
     echo "Not user jimstearns; skipping some PATH customizations"
 fi
-
 
 # Just the current directory for shell prompt.
 # Default: "\h:\W \u\\$ "
@@ -63,14 +65,10 @@ alias finderShow='defaults write com.apple.finder AppleShowAllFiles YES; killall
 
 alias finderHide='defaults write com.apple.finder AppleShowAllFiles NO; killall Finder /System/Library/CoreServices/Finder.app'
 
-# For courses
-alias uwpce='cd ~/GoogleDrive/Learning/Courses/UWPCE-DataScience/Course1_Intro'
-
 ##
-# Your previous /Users/jimstearns/.bash_profile file was backed up as /Users/jimstearns/.bash_profile.macports-saved_2014-11-08_at_13:38:26
+# For current courses
 ##
-
-# MacPorts Installer addition on 2014-11-08_at_13:38:26: adding an appropriate PATH variable for use with MacPorts.
-export PATH="/opt/local/bin:/opt/local/sbin:$PATH"
+alias uwds1='cd ~/GoogleDrive/Learning/Courses/UWPCE-DataScience/Course1_Intro'
 # Finished adapting your PATH environment variable for use with MacPorts.
 
+alias jsds5='cd ~/GoogleDrive/Learning/Courses/CourseraDataScience/5_ReproducibleResearch'
