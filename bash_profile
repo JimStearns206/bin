@@ -71,4 +71,5 @@ alias finderHide='defaults write com.apple.finder AppleShowAllFiles NO; killall 
 alias uwds1='cd ~/GoogleDrive/Learning/Courses/UWPCE-DataScience/Course1_Intro'
 # Finished adapting your PATH environment variable for use with MacPorts.
 
-alias jsds5='cd ~/GoogleDrive/Learning/Courses/CourseraDataScience/5_ReproducibleResearch'
+# Johns Hopkins Data Science on Coursera
+alias jhds5='cd ~/GoogleDrive/Learning/Courses/CourseraDataScience/5_ReproducibleResearch'
