@@ -72,4 +72,6 @@ alias uwds1='cd ~/GoogleDrive/Learning/Courses/UWPCE-DataScience/Course1_Intro'
 # Finished adapting your PATH environment variable for use with MacPorts.
 
 # Johns Hopkins Data Science on Coursera
-alias jhds5='cd ~/GoogleDrive/Learning/Courses/CourseraDataScience/5_ReproducibleResearch'
+alias jhds='cd ~/GoogleDrive/Learning/Courses/JohnsHopkinsDataScience'
+alias jhds5='cd ~/GoogleDrive/Learning/Courses/JohnsHopkinsDataScience/5_ReproducibleResearch'
+alias jhds6='cd ~/GoogleDrive/Learning/Courses/JohnsHopkinsDataScience/6_StatisticalInference'
