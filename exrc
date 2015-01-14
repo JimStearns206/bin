@@ -9,3 +9,6 @@ set showmatch
 " Don't set wrap margin
 " (set to 4 to get automatic newline nearfrom right edge of window.)
 set wrapmargin=0
+" Set line ending to unix \n not \r\n
+set fileformat=unix
+

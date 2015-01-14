@@ -4,7 +4,7 @@
 
 # Reference the bash script invoking even for batch jobs.
 if [ -f ~/.bashrc ]; then
-	echo "Loading ${HOME}/.bash_profile"
+	echo "Loading ${HOME}/.bashrc"
 	source ~/.bashrc
 fi
 
@@ -65,13 +65,18 @@ alias finderShow='defaults write com.apple.finder AppleShowAllFiles YES; killall
 
 alias finderHide='defaults write com.apple.finder AppleShowAllFiles NO; killall Finder /System/Library/CoreServices/Finder.app'
 
-##
-# For current courses
-##
-alias uwds1='cd ~/GoogleDrive/Learning/Courses/UWPCE-DataScience/Course1_Intro'
-# Finished adapting your PATH environment variable for use with MacPorts.
+# Only set if user is jimstearns. Don't clutter and confuse Mac VMs.
+if [ "$(whoami)" = "jimstearns" ]; then
+    ##
+    # For current courses
+    ##
+    alias uwds1='cd ~/GoogleDrive/Learning/Courses/UWPCE-DataScience/Course1_Intro'
+    alias uwds2='cd ~/GoogleDrive/Learning/Courses/UWPCE-DataScience/Course2_Methods'
+    # Finished adapting your PATH environment variable for use with MacPorts.
 
-# Johns Hopkins Data Science on Coursera
-alias jhds='cd ~/GoogleDrive/Learning/Courses/JohnsHopkinsDataScience'
-alias jhds5='cd ~/GoogleDrive/Learning/Courses/JohnsHopkinsDataScience/5_ReproducibleResearch'
-alias jhds6='cd ~/GoogleDrive/Learning/Courses/JohnsHopkinsDataScience/6_StatisticalInference'
+    # Johns Hopkins Data Science on Coursera
+    alias jhds='cd ~/GoogleDrive/Learning/Courses/JohnsHopkinsDataScience'
+    alias jhds5='cd ~/GoogleDrive/Learning/Courses/JohnsHopkinsDataScience/5_ReproducibleResearch'
+    alias jhds6='cd ~/GoogleDrive/Learning/Courses/JohnsHopkinsDataScience/6_StatisticalInference'
+    echo "Set aliases for course work paths"
+fi
