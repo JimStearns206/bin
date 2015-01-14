@@ -19,6 +19,10 @@ while getopts "c:" opt; do
 done
 	    
 teebagDirectory=~/Teebags
+if [ ! -d ${teebagDirectory} ]; then
+    mkdir ${teebagDirectory}
+    echo "First teebag use: created ${teebagDirectory}"
+fi
 pwd=$(pwd)
 dateTime=$(date "+%Y-%m-%dT%H:%M:%S")
 pwdAsString=${pwd//\//_}
