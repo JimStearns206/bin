@@ -72,6 +72,7 @@ if [ "$(whoami)" = "jimstearns" ]; then
     ##
     alias uwds1='cd ~/GoogleDrive/Learning/Courses/UWPCE-DataScience/Course1_Intro'
     alias uwds2='cd ~/GoogleDrive/Learning/Courses/UWPCE-DataScience/Course2_Methods'
+    alias uwds3='cd ~/GoogleDrive/Learning/Courses/UWPCE-DataScience/Course3_DataAtScale'
     # Finished adapting your PATH environment variable for use with MacPorts.
 
     # Johns Hopkins Data Science on Coursera
