@@ -1,6 +1,6 @@
 " Set vi to use "tab" key to generate 4 spaces.
 " This can get more sophisticated. See http://stackoverflow.com/questions/69998/tabs-and-spaces-in-vim.
-set autoindent
+set noautoindent
 set expandtab
 set tabstop=4
 set softtabstop=4
