@@ -80,4 +80,9 @@ if [ "$(whoami)" = "jimstearns" ]; then
     alias jhds5='cd ~/GoogleDrive/Learning/Courses/JohnsHopkinsDataScience/5_ReproducibleResearch'
     alias jhds6='cd ~/GoogleDrive/Learning/Courses/JohnsHopkinsDataScience/6_StatisticalInference'
     echo "Set aliases for course work paths"
+
+    ##
+    # For Kaggle Competitions
+    ##
+    alias kaggle='cd ~/GoogleDrive/Learning/Challenges/Kaggle'
 fi
