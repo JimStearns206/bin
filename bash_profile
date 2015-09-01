@@ -21,17 +21,18 @@ export PATH="/opt/local/bin:/opt/local/sbin:$PATH"
 if [ "$(whoami)" = "jimstearns" ]; then
     echo "Adding path entries for user jimstearns"
     # added by Anaconda 1.8.0 installer
-    ## While working on NOAA MARPLOT, don't use anaconda:
-    ##export PATH="/Users/jimstearns/anaconda/bin:$PATH"
-    ## Or Python3.4
+
+    ## Don't use in NOAA devenvs (Python 2.7)
+    ##echo "NOT setting up Python anaconda or 3.4 in PATH (while MARPLOTing)"
+    ### Setting PATH for Python 2.7 using python.org Python.
+    ##PATH="/Library/Frameworks/Python.framework/Versions/2.7/bin:${PATH}"
+
+    export PATH="/Users/jimstearns/anaconda/bin:$PATH"
     # Setting PATH for Python 3.4
     # The original version is saved in .bash_profile.pysave
-    ##PATH="/Library/Frameworks/Python.framework/Versions/3.4/bin:${PATH}"
+    PATH="/Library/Frameworks/Python.framework/Versions/3.4/bin:${PATH}"
     
-    echo "NOT setting up Python anaconda or 3.4 in PATH (while MARPLOTing)"
 
-    # Setting PATH for Python 2.7 using python.org Python.
-    PATH="/Library/Frameworks/Python.framework/Versions/2.7/bin:${PATH}"
     export PATH
 
     # Allow easy access to mysql commands:
@@ -68,12 +69,25 @@ alias finderHide='defaults write com.apple.finder AppleShowAllFiles NO; killall 
 # Only set if user is jimstearns. Don't clutter and confuse Mac VMs.
 if [ "$(whoami)" = "jimstearns" ]; then
     ##
+    # For Learning base directory
+    ##
+    alias learning='cd ~/GoogleDrive/Learning'
+
+    ##
+    # For Kaggle Competitions
+    ##
+    alias kaggle='cd ~/GoogleDrive/Learning/Challenges/Kaggle'
+
+    ##
     # For current courses
+    ##
+
+    ##
+    # For completed courses
     ##
     alias uwds1='cd ~/GoogleDrive/Learning/Courses/UWPCE-DataScience/Course1_Intro'
     alias uwds2='cd ~/GoogleDrive/Learning/Courses/UWPCE-DataScience/Course2_Methods'
     alias uwds3='cd ~/GoogleDrive/Learning/Courses/UWPCE-DataScience/Course3_DataAtScale'
-    # Finished adapting your PATH environment variable for use with MacPorts.
 
     # Johns Hopkins Data Science on Coursera
     alias jhds='cd ~/GoogleDrive/Learning/Courses/JohnsHopkinsDataScience'
@@ -82,7 +96,10 @@ if [ "$(whoami)" = "jimstearns" ]; then
     echo "Set aliases for course work paths"
 
     ##
-    # For Kaggle Competitions
+    # For PyData 2015, Seattle
     ##
-    alias kaggle='cd ~/GoogleDrive/Learning/Challenges/Kaggle'
+    alias pydata='cd ~/GoogleDrive/Learning/Courses/PyData2015Seattle'
 fi
+
+# added by Anaconda3 2.2.0 installer
+export PATH="/Users/jimstearns/anaconda/bin:$PATH"
