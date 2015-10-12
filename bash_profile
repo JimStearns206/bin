@@ -32,6 +32,15 @@ if [ "$(whoami)" = "jimstearns" ]; then
     # The original version is saved in .bash_profile.pysave
     PATH="/Library/Frameworks/Python.framework/Versions/3.4/bin:${PATH}"
     
+    # Adding path to allow ipython nbconvert to pdf. 
+    pdflatex_path=/usr/local/texlive/2014/bin/x86_64-darwin/
+    if [ -d $pdflatex_path ]; then
+        PATH=${PATH}:${pdflatex_path}
+        echo "Added path to find pdflatex for ipython nbconvert to PDF"
+    else
+        echo "Did not find path for pdflatex; ipython nbconvert to pdf operations may fail"
+        echo "Expected path = $pdflatex_path"
+    fi
 
     export PATH
 
@@ -58,6 +67,8 @@ set -o vi
 alias ls='ls -F'
 # Can't break this habit formed at HP LSD in the 80's.
 alias ll='ls -l'
+# For listing metadata of a large MP4 file, typically uploaded from TiVo
+alias tivometa='exiftool -api largefilesupport=1 '
 
 # List hidden .files in Finder, or not
 # Source: http://ianlunn.co.uk/articles/quickly-showhide-hidden-files-mac-os-x-mavericks/
