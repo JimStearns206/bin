@@ -6,7 +6,7 @@
 ##echo "N.B: Aliasing python to python.org's 32-bit 2.7"
 
 alias python='python3'
-echo "N.B: Aliasing python to python3 64-bit 3.4.0"
+echo "N.B: Aliasing python to python3 64-bit"
 
 ##
 # PATH

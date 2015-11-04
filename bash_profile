@@ -20,17 +20,6 @@ export PATH="/opt/local/bin:/opt/local/sbin:$PATH"
 # Only set if user is jimstearns. Don't clutter and confuse Mac VMs.
 if [ "$(whoami)" = "jimstearns" ]; then
     echo "Adding path entries for user jimstearns"
-    # added by Anaconda 1.8.0 installer
-
-    ## Don't use in NOAA devenvs (Python 2.7)
-    ##echo "NOT setting up Python anaconda or 3.4 in PATH (while MARPLOTing)"
-    ### Setting PATH for Python 2.7 using python.org Python.
-    ##PATH="/Library/Frameworks/Python.framework/Versions/2.7/bin:${PATH}"
-
-    export PATH="/Users/jimstearns/anaconda/bin:$PATH"
-    # Setting PATH for Python 3.4
-    # The original version is saved in .bash_profile.pysave
-    PATH="/Library/Frameworks/Python.framework/Versions/3.4/bin:${PATH}"
     
     # Adding path to allow ipython nbconvert to pdf. 
     pdflatex_path=/usr/local/texlive/2014/bin/x86_64-darwin/
@@ -114,3 +103,8 @@ fi
 
 # added by Anaconda3 2.2.0 installer
 export PATH="/Users/jimstearns/anaconda/bin:$PATH"
+
+# Setting PATH for Python 3.5
+# The orginal version is saved in .bash_profile.pysave
+PATH="/Library/Frameworks/Python.framework/Versions/3.5/bin:${PATH}"
+export PATH
