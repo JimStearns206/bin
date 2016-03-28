@@ -1,6 +1,7 @@
 #!/bin/bash
 #
 # bash profile for Jim Stearns and for Jim Stearns as VM user.
+echo "Running bin/bash_profile ..."
 
 # Reference the bash script invoking even for batch jobs.
 if [ -f ~/.bashrc ]; then
@@ -40,14 +41,6 @@ if [ "$(whoami)" = "jimstearns" ]; then
 else
     echo "Not user jimstearns; skipping some PATH customizations"
 fi
-
-# Just the current directory for shell prompt.
-# Default: "\h:\W \u\\$ "
-export PS1="[\W]$ "
-
-# Vi mode
-export EDITOR=vi
-set -o vi
 
 ##
 # Aliases
