@@ -6,4 +6,6 @@ Includes home dot-files for bash and vi
     ln -s bin/bash_profile .bash_profile
     ln -s bin/bashrc .bashrc
     ln -s bin/exrc .exrc
+    mkdir ~/Teebags
+    source ~/.bash_profile
 Maintained on github.
