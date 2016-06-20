@@ -1,6 +1,7 @@
 #!/bin/bash
 #
 # bash profile for Jim Stearns and for Jim Stearns as VM user.
+echo "Running bin/bash_profile ..."
 
 # Reference the bash script invoking even for batch jobs.
 if [ -f ~/.bashrc ]; then
@@ -41,14 +42,6 @@ else
     echo "Not user jimstearns; skipping some PATH customizations"
 fi
 
-# Just the current directory for shell prompt.
-# Default: "\h:\W \u\\$ "
-export PS1="[\W]$ "
-
-# Vi mode
-export EDITOR=vi
-set -o vi
-
 ##
 # Aliases
 ##
@@ -74,12 +67,12 @@ if [ "$(whoami)" = "jimstearns" ]; then
     ##
     # For Learning base directory
     ##
-    alias learning='cd ~/GoogleDrive/Learning'
+    alias learning='cd ~/OneDrive/Learning'
 
     ##
     # For Kaggle Competitions
     ##
-    alias kaggle='cd ~/GoogleDrive/Learning/Challenges/Kaggle'
+    alias kaggle='cd ~/OneDrive/Learning/Challenges/Kaggle'
 
     ##
     # For General Fusion Challenge at Innocentive (Dec2015-Mar2016)
@@ -94,26 +87,27 @@ if [ "$(whoami)" = "jimstearns" ]; then
     ##
     # For completed courses
     ##
-    alias uwds1='cd ~/GoogleDrive/Learning/Courses/UWPCE-DataScience/Course1_Intro'
-    alias uwds2='cd ~/GoogleDrive/Learning/Courses/UWPCE-DataScience/Course2_Methods'
-    alias uwds3='cd ~/GoogleDrive/Learning/Courses/UWPCE-DataScience/Course3_DataAtScale'
+    alias uwds1='cd ~/OneDrive/Learning/Courses/UWPCE-DataScience/Course1_Intro'
+    alias uwds2='cd ~/OneDrive/Learning/Courses/UWPCE-DataScience/Course2_Methods'
+    alias uwds3='cd ~/OneDrive/Learning/Courses/UWPCE-DataScience/Course3_DataAtScale'
 
     # Johns Hopkins Data Science on Coursera
-    alias jhds='cd ~/GoogleDrive/Learning/Courses/JohnsHopkinsDataScience'
-    alias jhds5='cd ~/GoogleDrive/Learning/Courses/JohnsHopkinsDataScience/5_ReproducibleResearch'
-    alias jhds6='cd ~/GoogleDrive/Learning/Courses/JohnsHopkinsDataScience/6_StatisticalInference'
+    alias jhds='cd ~/OneDrive/Learning/Courses/JohnsHopkinsDataScience'
+    alias jhds5='cd ~/OneDrive/Learning/Courses/JohnsHopkinsDataScience/5_ReproducibleResearch'
+    alias jhds6='cd ~/OneDrive/Learning/Courses/JohnsHopkinsDataScience/6_StatisticalInference'
     echo "Set aliases for course work paths"
 
     ##
     # For PyData 2015, Seattle
     ##
-    alias pydata='cd ~/GoogleDrive/Learning/Courses/PyData2015Seattle'
+    alias pydata='cd ~/OneDrive/Learning/Conferences/PyData2015Seattle'
+
+    ##
+    # For PyCon 2016, Portland
+    ##
+    alias pycon='cd ~/OneDrive/Learning/Conferences/PyCon2016'
 fi
 
-# added by Anaconda3 2.2.0 installer
-export PATH="/Users/jimstearns/anaconda/bin:$PATH"
 
-# Setting PATH for Python 3.5
-# The orginal version is saved in .bash_profile.pysave
-PATH="/Library/Frameworks/Python.framework/Versions/3.5/bin:${PATH}"
-export PATH
+# added by Anaconda3 4.0.0 installer
+export PATH="/Users/jimstearns/anaconda/bin:$PATH"
