@@ -66,6 +66,9 @@ alias finderShow='defaults write com.apple.finder AppleShowAllFiles YES; killall
 
 alias finderHide='defaults write com.apple.finder AppleShowAllFiles NO; killall Finder /System/Library/CoreServices/Finder.app'
 
+# List what processes are using NOAA MARPLOT server port
+alias noaaport='lsof -i tcp:56677'
+
 # Only set if user is jimstearns. Don't clutter and confuse Mac VMs.
 if [ "$(whoami)" = "jimstearns" ]; then
     ##
@@ -77,6 +80,12 @@ if [ "$(whoami)" = "jimstearns" ]; then
     # For Kaggle Competitions
     ##
     alias kaggle='cd ~/GoogleDrive/Learning/Challenges/Kaggle'
+
+    ##
+    # For General Fusion Challenge at Innocentive (Dec2015-Mar2016)
+    # (Put on One Drive because data too big for my almost-full 100GB Google Drive.
+    ##
+    alias fusion='cd ~/OneDrive/Life/Learning/Challenges/GeneralFusion'
 
     ##
     # For current courses
