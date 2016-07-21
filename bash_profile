@@ -13,6 +13,7 @@ fi
 # Environment Variables
 # Put all environment variables here. This is read in at shell login.
 ##
+export NLTK_DATA=~/Learning/example_python_code/nltk_data
 
 # MacPorts Installer addition on 2014-11-08_at_13:38:26: adding an appropriate PATH variable for use with MacPorts.
 export PATH="/opt/local/bin:/opt/local/sbin:$PATH"
