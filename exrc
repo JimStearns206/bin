@@ -1,4 +1,6 @@
 " Set vi to use "tab" key to generate 4 spaces.
+" Justification: Python PEP-8 so recommends. Discussion at:
+" http://stackoverflow.com/questions/120926/why-does-python-pep-8-strongly-recommend-spaces-over-tabs-for-indentation
 " This can get more sophisticated. See http://stackoverflow.com/questions/69998/tabs-and-spaces-in-vim.
 set noautoindent
 set expandtab
