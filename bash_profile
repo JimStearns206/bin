@@ -75,13 +75,15 @@ if [ "$(whoami)" = "jimstearns" ]; then
     ##
     alias kaggle='cd ~/OneDrive/Learning/Challenges/Kaggle'
 
+    # Kaggle intracranial EEG Seizure Prediction (from NeuroVista data)
+    alias ieeg='cd ~/OneDrive/Learning/Challenges/Kaggle/IeegSeizurePrediction'
+
     ##
     # For General Fusion Challenge at Innocentive (Dec2015-Mar2016)
     # (Put on One Drive because data too big for my almost-full 100GB Google Drive.
     ##
     alias fusion='cd ~/OneDrive/Life/Learning/Challenges/GeneralFusion'
 
-    ##
     # For current courses
     ##
 
