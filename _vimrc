@@ -1,7 +1,12 @@
 " _vimrc configuration file of Jim Stearns
 
 " Display line numbers on the left:
-set number
+""set number
+
+" Or not: display current line number in the ruler line:
+set ruler
+
+" Conway recommendation: "watchdog" plugin for status line.
 
 " Change the leave-insert-mode key (default is Esc)
 inoremap jk <ESC>
