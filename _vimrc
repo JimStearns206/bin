@@ -1,6 +1,6 @@
 " _vimrc configuration file of Jim Stearns
 
-" Display line numbers on the left:
+" (No:Display line numbers on the left:)
 ""set number
 
 " Or not: display current line number in the ruler line:
@@ -26,3 +26,8 @@ set encoding=utf-8
 " http://stackoverflow.com/questions/11489428/how-to-make-vim-paste-from-and-copy-to-systems-clipboard
 set clipboard=unnamed
 
+" Allow cntl-c/cntl-v to be copy/paste on Windows:
+" (and does other stuff as well, TBD)
+if has('win32')
+	source $VIMRUNTIME/mswin.vim
+endif

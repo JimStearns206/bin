@@ -63,3 +63,10 @@ _Assumption: The same vim configuration file can be used for both vim and IdeaVi
 		cd %HOME%
 		mklink /H .ideavimrc vimfiles\_vimrc
 		````
+* IdeaVim Configuration Inside PyCharm
+
+	* For copy/paste to work outside IDE, let IDE control Cntl+V/Cntl+C
+		* Settings/Other Settings/Vim Emulation,
+			let IDE control those two keystroke sequences.
+		* Details: http://askubuntu.com/questions/568662/ctrl-v-and-ctrl-c-doesnt-work-in-intellij-idea-14-0-2
+
