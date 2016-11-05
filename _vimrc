@@ -14,7 +14,7 @@ inoremap jk <ESC>
 " Remap the leader key from backslash to space key:
 let mapleader = "\<Space>"
 
-" Not here, but consider remapping CAPSLOCK to Cntl.
+" Not here, but in OS: consider remapping CAPSLOCK to Cntl.
 
 filetype plugin indent on
 syntax on
@@ -31,3 +31,12 @@ set clipboard=unnamed
 if has('win32')
 	source $VIMRUNTIME/mswin.vim
 endif
+
+" From Damian Conway O'Reilly "Mastering Vim" video:
+" Turn on highlighting in search:
+set hlsearch
+" To turn off the last search's highlighting, the command is:
+" :nohlsearch
+" Damiam suggests mapping backspace in normal mode to turn off highlighting:
+nmap <silent> <BS> :nohlsearch<CR>
+
