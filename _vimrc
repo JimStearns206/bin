@@ -1,5 +1,15 @@
 " _vimrc configuration file of Jim Stearns
 
+" =====================
+" Sourcing of external plugins
+" =====================
+" ym/yd/YM/YD commands:
+source ~/vimfiles/BetterVim_examples/plugins/yankmatches.vim
+
+" =====================
+" Individual Commands
+" =====================
+"
 " (No:Display line numbers on the left:)
 ""set number
 
