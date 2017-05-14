@@ -94,7 +94,7 @@ if [ "$(whoami)" = "jimstearns" ]; then
     alias uwds2='cd ~/NAS_file/Learning/Courses/UWPCE-DataScience/Course2_Methods'
     alias uwds3='cd ~/NAS_file/Learning/Courses/UWPCE-DataScience/Course3_DataAtScale'
 
-    # Johns Hopkins Data Science on Coursera
+    # Johns Hopkins Data Science on Coursera (Did first 6 (of 10)).
     alias jhds='cd ~/NAS_file/Learning/Courses/JohnsHopkinsDataScience'
     alias jhds5='cd ~/NAS_file/Learning/Courses/JohnsHopkinsDataScience/5_ReproducibleResearch'
     alias jhds6='cd ~/NAS_file/Learning/Courses/JohnsHopkinsDataScience/6_StatisticalInference'
