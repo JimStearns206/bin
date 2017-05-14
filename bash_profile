@@ -101,11 +101,6 @@ if [ "$(whoami)" = "jimstearns" ]; then
     echo "Set aliases for course work paths"
 
     ##
-    # For PyData 2015, Seattle
-    ##
-    alias pydata='cd ~/OneDrive/Learning/Conferences/PyData2015Seattle'
-
-    ##
     # For PyCon 2016, Portland
     ##
     alias pycon='cd ~/OneDrive/Learning/Conferences/PyCon2016'
