@@ -68,12 +68,12 @@ if [ "$(whoami)" = "jimstearns" ]; then
     ##
     # For Learning base directory
     ##
-    alias learning='cd ~/OneDrive/Learning'
+    alias cd_learning='cd ~/NAS_file/Learning'
 
     ##
     # For Kaggle Competitions
     ##
-    alias kaggle='cd ~/OneDrive/Learning/Challenges/Kaggle'
+    alias kaggle='cd ~/NAS_file/Learning/Challenges/Kaggle'
 
     # Kaggle intracranial EEG Seizure Prediction (from NeuroVista data)
     alias ieeg='cd ~/OneDrive/Learning/Challenges/Kaggle/IeegSeizurePrediction'
