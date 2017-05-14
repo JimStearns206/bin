@@ -68,7 +68,7 @@ if [ "$(whoami)" = "jimstearns" ]; then
     ##
     # For Learning base directory
     ##
-    alias learning='cd ~/OneDrive/Learning'
+    alias learning='cd ~/GoogleDrive/Learning'  # A bogus change
 
     ##
     # For Kaggle Competitions
