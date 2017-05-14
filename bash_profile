@@ -110,13 +110,25 @@ if [ "$(whoami)" = "jimstearns" ]; then
     ##
     # For PuPPy ATOM studies of Kaggle winners
     alias cdrtwh='cd /Volumes/file/CldUnenc/Learning/MeetUps/PuPPy-ATOM/noaa-right-whale-recognition'
+
+    ##
+    # For PuPPy/ATOM meeting Kaggle repro's
+    ##
+    # "dwr": deepsense-whales-repro
+    alias cd-dwr='cd ~/NoCloudDrive/Learning/Meetups/ATOM/deepsense-whales-repro'
 fi
 
 
 # added by Anaconda3 4.0.0 installer
 export PATH="/Users/jimstearns/anaconda/bin:$PATH"
 
+##
+# Your previous /Users/jimstearns/.bash_profile file was backed up as /Users/jimstearns/.bash_profile.macports-saved_2016-11-19_at_23:43:44
+##
 # Setting PATH for Python 3.6
-# The original version is saved in .bash_profile.pysave
+# MacPorts Installer addition on 2016-11-19_at_23:43:44: adding an appropriate PATH variable for use with MacPorts.
+export PATH="/opt/local/bin:/opt/local/sbin:$PATH"
 PATH="/Library/Frameworks/Python.framework/Versions/3.6/bin:${PATH}"
 export PATH
+# added by Anaconda3 4.3.1 installer
+export PATH="/Users/jimstearns/anaconda/bin:$PATH"
