@@ -13,7 +13,7 @@ fi
 # Environment Variables
 # Put all environment variables here. This is read in at shell login.
 ##
-export NLTK_DATA=~/Learning/example_python_code/nltk_data
+export NLTK_DATA=~/nltk_data
 
 # MacPorts Installer addition on 2014-11-08_at_13:38:26: adding an appropriate PATH variable for use with MacPorts.
 export PATH="/opt/local/bin:/opt/local/sbin:$PATH"
@@ -68,12 +68,12 @@ if [ "$(whoami)" = "jimstearns" ]; then
     ##
     # For Learning base directory
     ##
-    alias learning='cd ~/GoogleDrive/Learning'  # A bogus change
+    alias cd_learning='cd ~/NAS_file/Learning'
 
     ##
     # For Kaggle Competitions
     ##
-    alias kaggle='cd ~/OneDrive/Learning/Challenges/Kaggle'
+    alias kaggle='cd ~/NAS_file/Learning/Challenges/Kaggle'
 
     # Kaggle intracranial EEG Seizure Prediction (from NeuroVista data)
     alias ieeg='cd ~/OneDrive/Learning/Challenges/Kaggle/IeegSeizurePrediction'
@@ -104,8 +104,17 @@ if [ "$(whoami)" = "jimstearns" ]; then
     # For PyCon 2016, Portland
     ##
     alias pycon='cd ~/OneDrive/Learning/Conferences/PyCon2016'
+
+    ##
+    # For PuPPy ATOM studies of Kaggle winners
+    alias cdrtwh='cd /Volumes/file/CldUnenc/Learning/MeetUps/PuPPy-ATOM/noaa-right-whale-recognition'
 fi
 
 
 # added by Anaconda3 4.0.0 installer
 export PATH="/Users/jimstearns/anaconda/bin:$PATH"
+
+# Setting PATH for Python 3.6
+# The original version is saved in .bash_profile.pysave
+PATH="/Library/Frameworks/Python.framework/Versions/3.6/bin:${PATH}"
+export PATH
