@@ -9,6 +9,8 @@ if [ -f ~/.bashrc ]; then
 	source ~/.bashrc
 fi
 
+personal_logins="jimstearns jimstearns206 js206 jimstearns206test js206t"
+
 ##
 # Environment Variables
 # Put all environment variables here. This is read in at shell login.
@@ -20,8 +22,8 @@ export PATH="/opt/local/bin:/opt/local/sbin:$PATH"
 
 # -- PATH --
 # Only set if user is jimstearns. Don't clutter and confuse Mac VMs.
-if [ "$(whoami)" = "jimstearns" ]; then
-    echo "Adding path entries for user jimstearns"
+if echo "${personal_logins}" | grep -w "$(whoami)" >/dev/null; then
+    echo "Adding path entries for $(whoami), one of personal logins of jim stearns"
     
     # Adding path to allow ipython nbconvert to pdf. 
     pdflatex_path=/usr/local/texlive/2014/bin/x86_64-darwin/
