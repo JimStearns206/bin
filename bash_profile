@@ -76,13 +76,13 @@ if [ "$(whoami)" = "jimstearns" ]; then
     alias kaggle='cd ~/NAS_file/Learning/Challenges/Kaggle'
 
     # Kaggle intracranial EEG Seizure Prediction (from NeuroVista data)
-    alias ieeg='cd ~/OneDrive/Learning/Challenges/Kaggle/IeegSeizurePrediction'
+    alias ieeg='cd ~/NAS_file/Learning/Challenges/Kaggle/IeegSeizurePrediction'
 
     ##
     # For General Fusion Challenge at Innocentive (Dec2015-Mar2016)
     # (Put on One Drive because data too big for my almost-full 100GB Google Drive.
     ##
-    alias fusion='cd ~/OneDrive/Life/Learning/Challenges/GeneralFusion'
+    alias fusion='cd ~/NAS_file/Learning/Challenges/GeneralFusion'
 
     # For current courses
     ##
@@ -90,20 +90,20 @@ if [ "$(whoami)" = "jimstearns" ]; then
     ##
     # For completed courses
     ##
-    alias uwds1='cd ~/OneDrive/Learning/Courses/UWPCE-DataScience/Course1_Intro'
-    alias uwds2='cd ~/OneDrive/Learning/Courses/UWPCE-DataScience/Course2_Methods'
-    alias uwds3='cd ~/OneDrive/Learning/Courses/UWPCE-DataScience/Course3_DataAtScale'
+    alias uwds1='cd ~/NAS_file/Learning/Courses/UWPCE-DataScience/Course1_Intro'
+    alias uwds2='cd ~/NAS_file/Learning/Courses/UWPCE-DataScience/Course2_Methods'
+    alias uwds3='cd ~/NAS_file/Learning/Courses/UWPCE-DataScience/Course3_DataAtScale'
 
     # Johns Hopkins Data Science on Coursera
-    alias jhds='cd ~/OneDrive/Learning/Courses/JohnsHopkinsDataScience'
-    alias jhds5='cd ~/OneDrive/Learning/Courses/JohnsHopkinsDataScience/5_ReproducibleResearch'
-    alias jhds6='cd ~/OneDrive/Learning/Courses/JohnsHopkinsDataScience/6_StatisticalInference'
+    alias jhds='cd ~/NAS_file/Learning/Courses/JohnsHopkinsDataScience'
+    alias jhds5='cd ~/NAS_file/Learning/Courses/JohnsHopkinsDataScience/5_ReproducibleResearch'
+    alias jhds6='cd ~/NAS_file/Learning/Courses/JohnsHopkinsDataScience/6_StatisticalInference'
     echo "Set aliases for course work paths"
 
     ##
     # For PyCon 2016, Portland
     ##
-    alias pycon='cd ~/OneDrive/Learning/Conferences/PyCon2016'
+    alias pycon='cd ~/NAS_file/Learning/Conferences/PyCon2016'
 
     ##
     # For PuPPy ATOM studies of Kaggle winners
