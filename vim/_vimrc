@@ -4,7 +4,7 @@
 " Sourcing of external plugins
 " =====================
 " ym/yd/YM/YD commands:
-source ~/vimfiles/BetterVim_examples/plugins/yankmatches.vim
+source ~/bin/vim/BetterVim_examples/plugins/yankmatches.vim
 
 " =====================
 " Individual Commands
