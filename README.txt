@@ -15,7 +15,12 @@ Includes home dot-files for bash and vi
     source ~/.bash_profile
 
     # MacOS or Linux:
+    # Use :version to determine where vim looking for rc file
     ln -s bin/vim/_vimrc .ideavimrc
+    # or
+    ln -s bin/vim/_vimrc .vimrc
+
+
     # Windows:
     cd %HOME%
     mklink /H .ideavimrc bin\vim\_vimrc
