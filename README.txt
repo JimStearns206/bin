@@ -5,21 +5,36 @@ Includes home dot-files for bash and vi
   Files: .bash_profile, .bashrc, .exrc. vim/_vimrc 
   Commands:
     cd
-    ln -s bin/bash_profile .bash_profile
+
     # If on MacOS:
+    ln -s bin/bash_profile .bash_profile
     ln -s bin/bashrc .bashrc
-    # If on Ubuntu (it defines a useful .bashrc that pulls in .bash_aliases:
-    ln -s bin/bashrc .bash_aliases
+
+    ####
+    # Any Unix (MacOS, Ubuntu, CentOS):
     ln -s bin/exrc .exrc
     mkdir ~/Teebags
-    source ~/.bash_profile
 
-    # MacOS or Linux:
     # Use :version to determine where vim looking for rc file
     ln -s bin/vim/_vimrc .ideavimrc
     # or
     ln -s bin/vim/_vimrc .vimrc
+    # End Any Unix
+    ####
 
+    # If on Ubuntu (it defines a useful .bashrc that pulls in .bash_aliases:
+    ln -s bin/bashrc .bash_aliases
+    # To activate:
+    source ~/.bash_profile
+
+    # If on CentOS7, both .bash_profile and .bashrc exist.
+    # Add references to bin/bash_profile and bin/bashrc in those files.
+    # For example:
+
+    ## If my GitHub bin repo has been cloned into ~/bin, pull in bin/bash_profile
+    #if [ -f ~/bin/bash_profile ]; then
+    #    . ~/bin/bash_profile
+    #fi
 
     # Windows:
     cd %HOME%

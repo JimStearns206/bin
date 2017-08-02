@@ -54,14 +54,14 @@ _Assumption: The same vim configuration file can be used for both vim and IdeaVi
 		
 		```
 		cd ~
-		ln -s vimfiles/_vimrc .ideavimrc
+		ln -s bin/vim/_vimrc .ideavimrc
 		```
 		
 	* Windows:
 
 		```
 		cd %HOME%
-		mklink /H .ideavimrc vimfiles\_vimrc
+		mklink /H .ideavimrc bin\vim\_vimrc
 		````
 * IdeaVim Configuration Inside PyCharm
 
