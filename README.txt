@@ -7,7 +7,9 @@ Includes home dot-files for bash and vi
     cd
 
     # If on MacOS:
+    # If ~/.bash_profile doesn't exist:
     ln -s bin/bash_profile .bash_profile
+    # else add source ~/bin/bash_profile to end of .bash_profile
     ln -s bin/bashrc .bashrc
 
     ####
@@ -16,9 +18,8 @@ Includes home dot-files for bash and vi
     mkdir ~/Teebags
 
     # Use :version to determine where vim looking for rc file
-    ln -s bin/vim/_vimrc .ideavimrc
-    # or
-    ln -s bin/vim/_vimrc .vimrc
+    ln -s bin/vim/_vimrc .ideavimrc # for PyCharm
+    ln -s bin/vim/_vimrc .vimrc     # for vim
     # End Any Unix
     ####
 
