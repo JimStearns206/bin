@@ -1,6 +1,6 @@
 #!/bin/bash
 #
-# bash profile for Jim Stearns and for Jim Stearns as VM user.
+# bash profile for Jim Stearns and for Jim Stearns as VM user and for James.Stearns@noaa.gov
 echo "Running bin/bash_profile ..."
 
 # Reference the bash script invoking even for batch jobs.
@@ -118,6 +118,10 @@ if [ "$(whoami)" = "jimstearns" ]; then
     alias cd-dwr='cd ~/NoCloudDrive/Learning/Meetups/ATOM/deepsense-whales-repro'
 fi
 
+###
+# Aliases for james.stearns@noaa.gov on NWFSC MacBook Pro
+###
+alias sqlplus='~/bin/oracle_sqlplus/instantclient_12_2/sqlplus'
 
 # added by Anaconda3 4.0.0 installer
 export PATH="/Users/jimstearns/anaconda/bin:$PATH"
