@@ -122,6 +122,7 @@ fi
 # Aliases for james.stearns@noaa.gov on NWFSC MacBook Pro
 ###
 alias sqlplus='~/bin/oracle_sqlplus/instantclient_12_2/sqlplus'
+alias 12rb='cd ~/FramDataRepos/auv/12redblue'
 
 # added by Anaconda3 4.0.0 installer
 export PATH="/Users/jimstearns/anaconda/bin:$PATH"
