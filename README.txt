@@ -26,7 +26,7 @@ Includes home dot-files for bash and vi
     # If on Ubuntu (it defines a useful .bashrc that pulls in .bash_aliases:
     ln -s bin/bashrc .bash_aliases
     # To activate:
-    source ~/.bash_profile
+    source ~/.bashrc
 
     # If on CentOS7, both .bash_profile and .bashrc exist.
     # Add references to bin/bash_profile and bin/bashrc in those files.
