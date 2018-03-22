@@ -20,3 +20,9 @@ export PS1="[\W]$ "
 export EDITOR=vi
 set -o vi
 
+###
+# Aliases for james.stearns@noaa.gov on NWFSC MacBook Pro
+###
+alias sqlplus='~/bin/oracle_sqlplus/instantclient_12_2/sqlplus'
+alias 12rb='cd ~/FramDataRepos/auv/12redblue'
+
