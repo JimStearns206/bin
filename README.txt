@@ -1,5 +1,5 @@
 Bash script utilities for JimStearns206
-Maintained on github.
+Maintained on github. 
 Includes home dot-files for bash and vi 
   Convention: Place symbolic links in ~ to these files in bin or bin/vim
   Files: .bash_profile, .bashrc, .exrc. vim/_vimrc 
