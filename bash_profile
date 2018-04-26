@@ -123,6 +123,8 @@ fi
 ###
 alias sqlplus='~/bin/oracle_sqlplus/instantclient_12_2/sqlplus'
 alias 12rb='cd ~/FramDataRepos/auv/12redblue'
+alias cd12rb='cd ~/FramDataRepos/auv/12redblue'
+alias cdboat='cd ~/FramDataRepos/boatnet'
 
 # added by Anaconda3 4.0.0 installer
 export PATH="/Users/jimstearns/anaconda/bin:$PATH"
