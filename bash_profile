@@ -68,6 +68,11 @@ alias noaaport='lsof -i tcp:56677'
 # Only set if user is jimstearns. Don't clutter and confuse Mac VMs.
 if [ "$(whoami)" = "jimstearns" ]; then
     ##
+    # For family
+    ##
+    alias cd_kate='cd /Volumes/file/CldEnc/PersonalJim/Family/Kate'
+
+    ##
     # For Learning base directory
     ##
     alias cd_learning='cd ~/NAS_file/Learning'
